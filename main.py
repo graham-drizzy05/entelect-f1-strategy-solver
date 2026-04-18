@@ -4,12 +4,12 @@ with open('1.txt', 'r') as f:
     data = json.load(f)
 
 braking_distances = {
-    1: 162,   # straight 1 before corner 2 (radius 53)
-    4: 150,   # straight 4 before corner 5 (radius 50)
-    7: 160,   # straight 7 before corner 8 (radius 60)
-    9: 140,   # straight 9 before corner 10 (radius 95)
-    12: 158,  # straight 12 before corner 13 (radius 78)
-    14: 155   # straight 14 before corner 15 (radius 55)
+    1: 163.5,   # straight 1 (920m) before corner 2 (radius 53)
+    4: 167.2,   # straight 4 (600m) before corner 5 (radius 50)
+    7: 161.8,   # straight 7 (880m) before corner 8 (radius 60)
+    9: 120.5,   # straight 9 (700m) before corner 10 (radius 95)
+    12: 158.3,  # straight 12 (810m) before corner 13 (radius 78)
+    14: 160.9   # straight 14 (660m) before corner 15 (radius 55)
 }
 
 segments = []
@@ -43,3 +43,5 @@ output = {
 
 with open('output.txt', 'w') as f:
     json.dump(output, f, indent=2)
+
+print("output.txt created successfully!")
